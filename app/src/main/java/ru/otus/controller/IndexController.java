@@ -15,4 +15,9 @@ public class IndexController {
     public String publicPage(){
         return "public";
     }
+
+    @GetMapping("/ads")
+    public String adsPage(){
+        return "ads";
+    }
 }
