@@ -95,14 +95,4 @@
         </profile>
     </profiles>
 
-    <servers>
-        <server>
-            <id>docker-hub</id>
-            <username>jdruwe</username>
-            <password>secret-password</password>
-            <configuration>
-                <email>foo@foo.bar</email>
-            </configuration>
-        </server>
-    </servers>
 </project>
