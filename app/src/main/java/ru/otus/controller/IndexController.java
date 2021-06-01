@@ -20,4 +20,8 @@ public class IndexController {
     public String adsPage(){
         return "ads";
     }
+
+    public Integer retryCount(){
+        return 3;
+    }
 }
