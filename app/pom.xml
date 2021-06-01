@@ -86,7 +86,7 @@
                             <contextDirectory>docker</contextDirectory>
 
                             <repository>kataus/sample-build</repository>
-                            <tag>${project.version}</tag>
+                            <tag>latest</tag>
 
                         </configuration>
                     </plugin>

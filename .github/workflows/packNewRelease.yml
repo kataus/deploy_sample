@@ -26,8 +26,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         working-directory: app
         run: mvn --batch-mode clean package -P deploy-dev
-      - name: Check out the repo
-        uses: actions/checkout@v2
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
         with:
