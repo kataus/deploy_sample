@@ -24,7 +24,7 @@ jobs:
       - name: Prepare release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: mvn --batch-mode clean package -P deploy-dev
+        run: mvn --batch-mode clean package
       - name: Perform release
         env:
           DOCKER_HUB_TOKEN: ${{ secrets.DOCKER_HUB_TOKEN }}
