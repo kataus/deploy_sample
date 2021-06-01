@@ -10,4 +10,18 @@ public class IndexController {
     public String index(){
         return "index";
     }
+
+    @GetMapping("/public")
+    public String publicPage(){
+        return "public";
+    }
+
+    @GetMapping("/ads")
+    public String adsPage(){
+        return "ads";
+    }
+
+    public Integer retryCount(){
+        return 3;
+    }
 }
