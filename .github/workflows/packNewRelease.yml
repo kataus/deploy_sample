@@ -30,10 +30,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         working-directory: app
-        run: mvn clean package dockerfile:push -P deploy-dev
-
-      - name: Push to Docker Hub
-        uses: docker/build-push-action@v2
-        with:
-          push: true
-          tags: kataus/sample-build:latest
+        run: mvn --batch-mode clean package dockerfile:push -P deploy-dev
