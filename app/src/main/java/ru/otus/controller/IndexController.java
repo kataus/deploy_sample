@@ -13,12 +13,16 @@ public class IndexController {
 
     @GetMapping("/public")
     public String publicPage(){
-        return "public";
+        return "public_2";
     }
 
     @GetMapping("/ads")
     public String adsPage(){
         return "ads";
+    }
+
+    public void newMethod2(){
+        //
     }
 
     public Integer retryCount(){
