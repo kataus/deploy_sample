@@ -21,10 +21,6 @@ public class IndexController {
         return "ads";
     }
 
-    public void newMethod2(){
-        //
-    }
-
     public Integer retryCount(){
         return 7;
     }
