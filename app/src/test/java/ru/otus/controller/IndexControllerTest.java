@@ -13,10 +13,10 @@ class IndexControllerTest {
         assertEquals( "ads", indexController.adsPage() );
     }
 
-    @DisplayName( "Попытки должно быть 5" )
+    @DisplayName( "Попытки должно быть 7" )
     @Test
     public void testRetryCount(){
         IndexController indexController = new IndexController();
-        assertEquals( 5, indexController.retryCount() );
+        assertEquals( 7, indexController.retryCount() );
     }
 }
