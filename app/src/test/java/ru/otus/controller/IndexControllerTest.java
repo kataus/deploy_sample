@@ -17,6 +17,6 @@ class IndexControllerTest {
     @Test
     public void testRetryCount(){
         IndexController indexController = new IndexController();
-        assertEquals( 5, indexController.retryCount() );
+        assertEquals( 7, indexController.retryCount() );
     }
 }
